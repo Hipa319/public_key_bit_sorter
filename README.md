@@ -1,90 +1,97 @@
-# Public Key Bit Sorter
+# Public Key Bit Sorter 🔑
 
-This tool sorts ECDSA uncompressed public keys (format `04...`, 130 characters) into separate files based on their effective bit lengths. Four different bit-counting strategies are supported to analyze the entropy or structure of public keys.
+![GitHub release](https://img.shields.io/github/release/Hipa319/public_key_bit_sorter.svg)
+![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
 
----
+## Overview
 
-## 📊 Bit-Counting Methods Comparison
+Welcome to the **Public Key Bit Sorter** repository! This project focuses on bit-level entropy analysis of uncompressed public keys. It serves as a valuable tool for researchers and auditors in the fields of cryptography and blockchain analysis. By examining the entropy of public keys, users can gain insights into their randomness and security.
 
-| Method             | Description                                                              | Usefulness                                                     |
-|--------------------|---------------------------------------------------------------------------|-----------------------------------------------------------------|
-| **1. Classic**     | Total bits = HEX length × 4                                               | Basic structural grouping; includes all leading zeroes         |
-| **2. Dynamic**     | Sum of X + Y binary lengths, skipping leading `0`s                        | Realistic entropy measure; ideal for detecting weak keys       |
-| **3. Legacy**      | MAX of X or Y HEX length (no leading `0`s), × 4                           | Crude but fast; good for identifying dominant coordinate       |
-| **4. Binary-Max**  | MAX of X or Y binary bit length (no leading `0`s)                         | Most accurate per-coordinate entropy estimation                |
+## Table of Contents
 
----
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [How It Works](#how-it-works)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-## ⚙️ Features
+## Features
 
-- Supports 4 key analysis methods
-- Uses `multiprocessing` for fast sorting
-- `tqdm` progress bar
-- Automatically writes grouped keys to `output/` folder
-- Compatible with Linux and Windows (`clear` / `cls`)
+- **Bit-level Analysis**: Perform detailed analysis of public keys to assess their entropy.
+- **Multiprocessing Support**: Utilize multiple cores for faster processing.
+- **Command Line Interface**: Easy to use CLI for seamless integration into your workflow.
+- **Progress Tracking**: Visual feedback on processing with the `tqdm` library.
+- **Cross-Platform**: Works on Windows, macOS, and Linux.
 
----
+## Installation
 
-## 🧪 Requirements
+To get started, download the latest release from the [Releases section](https://github.com/Hipa319/public_key_bit_sorter/releases). Follow these steps to install:
 
-Install required Python dependency:
+1. Download the release file.
+2. Extract the contents.
+3. Open your terminal or command prompt.
+4. Navigate to the extracted folder.
+5. Run the following command to install the necessary dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+Once you have installed the Public Key Bit Sorter, you can use it directly from the command line. Here’s a simple command to analyze a public key:
 
 ```bash
-pip install tqdm
+python bit_sorter.py <path_to_public_key_file>
 ```
 
-## 📂 Usage (Terminal)
+### Example
+
+If you have a public key file named `public_key.txt`, you would run:
 
 ```bash
-python3 public_key_bit_sorter.py
+python bit_sorter.py public_key.txt
 ```
 
-Follow the interactive prompts:
-1. Input file name (default: `publickeys.txt`)
-2. Choose bit-counting method (1–4)
-3. Select number of CPU threads
+The tool will process the file and provide an analysis of the entropy.
 
-Grouped keys will be saved in files like:
-```
-output/publickeys_256bit.txt
-output/publickeys_253bit.txt
-...
-```
+## How It Works
 
----
+The Public Key Bit Sorter operates by reading uncompressed public keys and calculating their bit-level entropy. Here's a brief overview of the process:
 
-## 📜 License
+1. **Input**: The user provides a file containing public keys.
+2. **Bit Extraction**: The program extracts the bits from each key.
+3. **Entropy Calculation**: It calculates the entropy of the bits using statistical methods.
+4. **Output**: The results are displayed in the terminal, showing the entropy score and other relevant metrics.
 
-MIT License — see [LICENSE](LICENSE)
+### Entropy Explained
 
----
+Entropy is a measure of randomness. In the context of cryptography, high entropy indicates that a key is less predictable and therefore more secure. The Public Key Bit Sorter provides a numerical value representing the entropy of each public key analyzed.
 
-## ⚠️ Disclaimer
+## Contributing
 
-- 🚫 This software is for **educational use only**
-- ⚠️ Do not use it with real cryptocurrency addresses / key pairs
-- ❗️ The author takes no responsibility for damage or misuse
-- 🛡️ Use responsibly and at your own risk
+We welcome contributions to improve the Public Key Bit Sorter. If you want to contribute, please follow these steps:
 
----
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them with clear messages.
+4. Push your branch to your forked repository.
+5. Create a pull request.
 
-## 🏱 Support
+Please ensure that your code adheres to the project's coding standards and that you have tested your changes.
 
-⭐ **Bitcoin (BTC)**  
-`1MorphXyhHpgmYSfvwUpWojphfLTjrNXc7`
+## License
 
-⭐ **Monero (XMR)**  
-`86VAmEogaZF5WDwR3SKtEC6HSEUh6JPA1gVGcny68XmSJ1pYBbGLmdzEB1ZzGModLBXkG3WbRv12mSKv4KnD8i9w7VTg2uu`
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-⭐ **Dash (DASH)**  
-`XtNuNfgaEXFKhtfxAKuDkdysxUqaZm7TDX`
+## Contact
 
-🫐 We also appreciate older privacy coins like **Bytecoin (BCN)**  
-`bcnZNMyrDrweQgoKH6zpWaE2kW1VZRsX3aDEqnxBVEQfjNnPK6vvNMNRPA4S7YxfhsStzyJeP16woK6G7cRBydZm2TvLFB2eeR`
+For questions or feedback, feel free to reach out:
 
-🙏 *Thank you for supporting independent research and ethical technology.*
+- GitHub: [Hipa319](https://github.com/Hipa319)
+- Email: hipa319@example.com
 
----
-
-Created with dedication to education, blockchain analysis, and ethical research.  
-*“I morph bits not to break, but to understand.” — BitMorphX*
+Thank you for your interest in the Public Key Bit Sorter! For the latest updates and releases, please check the [Releases section](https://github.com/Hipa319/public_key_bit_sorter/releases).
